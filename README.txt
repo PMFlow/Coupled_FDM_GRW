@@ -1,20 +1,20 @@
+This folder contains the following Matlab scripts and data files:
 
-Solutions of stationary flows in saturated porous media with hydraulic conductivity modeled as a spatial random function are computed with numerical schemes based on implicit and explicit finite difference methods (FDM) designed in (https://doi.org/10.1016/j.advwatres.2020.103558, Section 3.1 and 3.6).
 
-Advection-diffusion solutions of passive transport in aquifers are otained with the unbiased global random walk algorithm (GRW) (https://doi.org/10.1016/j.advwatres.2021.103935, Section 4.2.2).
+'main_realizations_implicitFDM.m' and 'main_realizations_explicitFDM.m'
+are codes to compute velocity realizations with implicit/explicit FDM.
 
-Monte Carlo inferences of the velocity of the center of mass of the solute plume and of the ensemble dispersion coefficients are obtained from GRW solutions computed with realizations of velocity fields from ensembles of FDM flow solutions.
+'implicitFDM.m' is the version for homogeneous boundary value problems of the FDM solver published in 
+https://github.com/CDAlecsa/Boundary-Value-Problem-2D
 
-The coupled FDM-GRW approach using the implicit FDM scheme is found to be at least two orders of magnitude faster than the approach based on the explicit FDM scheme. The results obtained by both approaches are close to each other and close to the results of the linear approximation using the Kraichnan generator of the velocity field. Note that the linear approximation is one order of magnitude faster than the implicit FDM but it is limited to small variances of the lnK field.
+'explicitFDM.m' is the "deterministic GRW" solver 'realiz_Gauss_GRW.m' for advection-diffusion transport from 
+https://github.com/PMFlow/RichardsEquation/tree/main/2D/Saturated_2D_FlowTransport
 
-The Matlab codes and data are contained in the following folders:
 
-FDM_Flow
-- implicit and explicit FDM flow solutions and ensembles of realizations.
+'Kraichnan_Gauss_param.m' and 'K' are versions of the functions used to compute random phases and wavenumbers and realizations of the hydraulic conductivity, respectively, from
+https://github.com/PMFlow/FlowBenchmark/tree/master/K-field_generators/Matlab
 
-GRW_Transport
-- the computation of the center of mass velcoity and of the dispersion coefficients.
+'initstate.m' fixes the seed of the random number generator 'randn' used in 'Kraichnan_Gauss_param.m'
 
-Comparisons
--comparisons between FDM approaches and a linear approximation.
+'test_implicitFDM' and 'test_explicitFDM' are folders containing ensembles of 100 realizations of a random velocity field computed with the implicit and explicit FDM, respectively.
 
