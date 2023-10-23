@@ -9,6 +9,8 @@ This folder contains the following Matlab scripts and data files:
 - 'Gauss_IC.m' is the function giving a Gaussian initial condition.
 
 - 'ensemble_coefficients_implicitFEM.mat' and
+  
       'ensemble_coefficients_explicitFEM.mat'
+  
       contain the resulting velocity components of the center of mass of the solute plume and the ensemble dispersion coefficients.
 
