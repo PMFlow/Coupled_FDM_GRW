@@ -1,4 +1,4 @@
-## Coupled_FDM_GRW  is a repository containing Matalb codes and data files for Monte Carlo assessements on transport in porous media achieved by coupling finite difference method (FDM) flow solutions with global random walk (GRW) transport solutions.
+### Coupled_FDM_GRW  is a repository containing Matalb codes and data files for Monte Carlo assessements on transport in porous media achieved by coupling finite difference method (FDM) flow solutions with global random walk (GRW) transport solutions.
 #
 - Solutions of stationary flows in saturated porous media with hydraulic conductivity modeled as a spatial random function are computed with numerical schemes based on implicit and explicit finite difference methods (FDM) designed in (https://doi.org/10.1016/j.advwatres.2020.103558, Section 3.1 and 3.6).
 
