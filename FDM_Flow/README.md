@@ -3,7 +3,7 @@ This folder contains the following Matlab scripts and data files:
 #
 
 - 'main_realizations_implicitFDM.m' and 'main_realizations_explicitFDM.m'
-are codes to compute velocity realizations with implicit/explicit FDM.
+are codes to compute velocity realizations with implicit/explicit FDM, respectively.
 
 - 'implicitFDM.m' is the version for homogeneous boundary value problems of the FDM solver published in 
 https://github.com/CDAlecsa/Boundary-Value-Problem-2D.
