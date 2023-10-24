@@ -12,7 +12,7 @@ https://github.com/CDAlecsa/Boundary-Value-Problem-2D.
 https://github.com/PMFlow/RichardsEquation/tree/main/2D/Saturated_2D_FlowTransport.
 
 - 'Kraichnan_Gauss_param.m' and 'K' are versions of the functions used to compute random phases and wavenumbers and realizations of the hydraulic conductivity, respectively, from
-https://github.com/PMFlow/FlowBenchmark/tree/master/K-field_generators/Matlab
+https://github.com/PMFlow/FlowBenchmark/tree/master/K-field_generators/Matlab.
 
 - 'initstate.m' fixes the seed of the random number generator 'randn' used in 'Kraichnan_Gauss_param.m'.
 
